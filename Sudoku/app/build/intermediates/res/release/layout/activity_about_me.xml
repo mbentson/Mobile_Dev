@@ -1,0 +1,124 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="edu.neu.madcourse.mattbentson.sudoku.AboutMe"
+    android:background="#ffecffd6">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/name_lbl"
+        android:id="@+id/nameLabel"
+        android:textColor="#ff878787"
+        android:textSize="15dp"
+        android:layout_alignTop="@+id/profilePic"
+        android:layout_toRightOf="@+id/profilePic"
+        android:layout_marginLeft="15dp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/profilePic"
+        android:src="@drawable/profilepic"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/name_txt"
+        android:id="@+id/nameText"
+        android:layout_below="@+id/nameLabel"
+        android:layout_alignLeft="@+id/nameLabel"
+        android:textColor="#ff000000"
+        android:textSize="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/email_lbl"
+        android:id="@+id/emailLabel"
+        android:textColor="#ff878787"
+        android:textSize="15dp"
+        android:layout_below="@+id/profilePic"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="15dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/email_txt"
+        android:id="@+id/emailText"
+        android:textColor="#ff000000"
+        android:textSize="20dp"
+        android:layout_below="@+id/emailLabel"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/year_lbl"
+        android:id="@+id/yearLabel"
+        android:textColor="#ff878787"
+        android:textSize="15dp"
+        android:layout_below="@+id/emailText"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="15dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/year_txt"
+        android:id="@+id/yearText"
+        android:textColor="#ff000000"
+        android:textSize="20dp"
+        android:layout_below="@+id/yearLabel"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/major_lbl"
+        android:id="@+id/majorLabel"
+        android:textColor="#ff878787"
+        android:textSize="15dp"
+        android:layout_below="@+id/yearText"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="15dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/major_txt"
+        android:id="@+id/majorText"
+        android:textColor="#ff000000"
+        android:textSize="20dp"
+        android:layout_below="@+id/majorLabel"
+        android:layout_alignParentLeft="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/unique_id"
+        android:id="@+id/uniqueLabel"
+        android:textColor="#ff878787"
+        android:textSize="15dp"
+        android:layout_below="@+id/majorText"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="15dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/uniqueText"
+        android:textColor="#ff000000"
+        android:textSize="20dp"
+        android:layout_below="@+id/uniqueLabel"
+        android:layout_alignParentLeft="true"
+        android:text="Test Text" />
+
+</RelativeLayout>
+<!-- From: file:/C:/Users/hocke_000/Documents/Mobile%20Development/Sudoku/app/src/main/res/layout/activity_about_me.xml -->
