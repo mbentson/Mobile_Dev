@@ -8,7 +8,7 @@
  ! Visit http://www.pragmaticprogrammer.com/titles/eband3 for more book information.
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="edu.neu.madcourse.mattbentson.sudoku"
+    package="edu.neu.madcourse.mattbentson"
     android:versionCode="1"
     android:versionName="1.0" >
 
@@ -22,23 +22,23 @@
         android:icon="@drawable/applogo"
         android:label="@string/app_name" >
         <activity
-            android:name="edu.neu.madcourse.mattbentson.sudoku.Sudoku"
+            android:name="edu.neu.madcourse.mattbentson.Sudoku"
             android:label="@string/app_name" >
         </activity>
         <activity
-            android:name="edu.neu.madcourse.mattbentson.sudoku.About"
+            android:name="edu.neu.madcourse.mattbentson.About"
             android:label="@string/about_title"
             android:theme="@android:style/Theme.Dialog" >
         </activity>
         <activity
-            android:name="edu.neu.madcourse.mattbentson.sudoku.Prefs"
+            android:name="edu.neu.madcourse.mattbentson.Prefs"
             android:label="@string/settings_title" >
         </activity>
         <activity
-            android:name="edu.neu.madcourse.mattbentson.sudoku.Game"
+            android:name="edu.neu.madcourse.mattbentson.Game"
             android:label="@string/game_title" />
         <activity
-            android:name="edu.neu.madcourse.mattbentson.sudoku.MainActivity"
+            android:name="edu.neu.madcourse.mattbentson.MainActivity"
             android:label="@string/title_activity_main" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -47,7 +47,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="edu.neu.madcourse.mattbentson.sudoku.AboutMe"
+            android:name="edu.neu.madcourse.mattbentson.AboutMe"
             android:label="@string/title_activity_about_me" >
         </activity>
     </application>

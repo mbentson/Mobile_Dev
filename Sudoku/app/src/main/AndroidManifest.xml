@@ -18,33 +18,40 @@
         android:icon="@drawable/applogo"
         android:label="@string/app_name" >
         <activity
-            android:name=".Sudoku"
-            android:label="@string/app_name" >
+            android:name="edu.neu.madcourse.mattbentson.Sudoku"
+            android:label="@string/main_title" >
         </activity>
         <activity
-            android:name=".About"
+            android:name="edu.neu.madcourse.mattbentson.About"
             android:label="@string/about_title"
             android:theme="@android:style/Theme.Dialog" >
         </activity>
         <activity
-            android:name=".Prefs"
+            android:name="edu.neu.madcourse.mattbentson.Prefs"
             android:label="@string/settings_title" >
         </activity>
         <activity
-            android:name=".Game"
+            android:name="edu.neu.madcourse.mattbentson.Game"
             android:label="@string/game_title" />
         <activity
-            android:name=".MainActivity"
-            android:label="@string/title_activity_main" >
-            <intent-filter>
+            android:name="edu.neu.madcourse.mattbentson.MainActivity"
+            android:label="@string/title_activity_main"
+            android:screenOrientation="portrait" >
+            <intent-filter android:label="@string/app_name" >
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
-            android:name=".AboutMe"
-            android:label="@string/title_activity_about_me" >
+            android:name="edu.neu.madcourse.mattbentson.AboutMe"
+            android:label="@string/title_activity_about_me"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="edu.neu.madcourse.mattbentson.Dictionary"
+            android:label="@string/title_activity_dictionary"
+            android:screenOrientation="portrait" >
         </activity>
     </application>
 

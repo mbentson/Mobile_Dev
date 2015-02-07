@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="edu.neu.madcourse.mattbentson.sudoku.test">
+    package="edu.neu.madcourse.mattbentson.test">
 
     <uses-sdk android:minSdkVersion="3" android:targetSdkVersion="10" />
 
@@ -9,8 +9,8 @@
     </application>
 
     <instrumentation android:name="android.test.InstrumentationTestRunner"
-                     android:targetPackage="edu.neu.madcourse.mattbentson.sudoku"
+                     android:targetPackage="edu.neu.madcourse.mattbentson"
                      android:handleProfiling="false"
                      android:functionalTest="false"
-                     android:label="Tests for edu.neu.madcourse.mattbentson.sudoku"/>
+                     android:label="Tests for edu.neu.madcourse.mattbentson"/>
 </manifest>
