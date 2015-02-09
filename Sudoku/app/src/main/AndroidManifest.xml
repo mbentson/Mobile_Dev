@@ -53,6 +53,10 @@
             android:label="@string/title_activity_dictionary"
             android:screenOrientation="portrait" >
         </activity>
+        <activity
+            android:name="edu.neu.madcourse.mattbentson.DictionaryAcks"
+            android:label="@string/title_acks" >
+        </activity>
     </application>
 
 </manifest>

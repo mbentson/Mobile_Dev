@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- From: file:/C:/Users/hocke_000/Documents/Mobile%20Development/Sudoku/app/src/main/res/values/arrays.xml -->
+    <!-- From: file:/C:/Users/hocke_000/Documents/GitHub/Mobile_Dev/Sudoku/app/src/main/res/values/arrays.xml -->
     <eat-comment/>
     <array name="difficulty">
       <item>@string/easy_label</item>
       <item>@string/medium_label</item>
       <item>@string/hard_label</item>
    </array>
-    <!-- From: file:/C:/Users/hocke_000/Documents/Mobile%20Development/Sudoku/app/src/main/res/values/colors.xml -->
+    <!-- From: file:/C:/Users/hocke_000/Documents/GitHub/Mobile_Dev/Sudoku/app/src/main/res/values/colors.xml -->
     <eat-comment/>
     <color name="background">#3500ffff</color>
     <color name="puzzle_background">#ffe6f0ff</color>
@@ -19,11 +19,11 @@
     <color name="puzzle_hint_2">#2000ff80</color>
     <color name="puzzle_light">#64c6d4ef</color>
     <color name="puzzle_selected">#64ff8000</color>
-    <!-- From: file:/C:/Users/hocke_000/Documents/Mobile%20Development/Sudoku/app/src/main/res/values/dimens.xml -->
+    <!-- From: file:/C:/Users/hocke_000/Documents/GitHub/Mobile_Dev/Sudoku/app/src/main/res/values/dimens.xml -->
     <eat-comment/>
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
-    <!-- From: file:/C:/Users/hocke_000/Documents/Mobile%20Development/Sudoku/app/src/main/res/values/strings.xml -->
+    <!-- From: file:/C:/Users/hocke_000/Documents/GitHub/Mobile_Dev/Sudoku/app/src/main/res/values/strings.xml -->
     <eat-comment/>
     <string label="MainPage" name="about_btn">About Me</string>
     <string label="sudoku" name="about_label">About</string>
@@ -39,7 +39,10 @@ row, each column, and each of the 3x3 boxes
     <string name="app_name">NUMAD15s-MattBentson</string>
     <string label="Universal" name="back_btn">Back</string>
     <string label="sudoku" name="continue_label">Continue</string>
+    <string label="Dictionary" name="dict_ack_txt">Zhongjie Mao: for insight into how to store/load my dictionary.\n\nStack Overflow: for the code to play the pre-installed Android beep - http://stackoverflow.com/questions/12154940/how-to-make-a-beep-in-android</string>
+    <string label="Dictionary" name="dictionary_ack_btn">Acknowledgments</string>
     <string label="MainPage" name="dictionary_btn">Dictionary</string>
+    <string label="Dictionary" name="dictionary_clear_btn">Clear</string>
     <string label="sudoku" name="easy_label">Easy</string>
     <string label="AboutMe" name="email_lbl">Email:</string>
     <string label="AboutMe" name="email_txt">bentson.m@husky.neu.edu</string>
@@ -66,8 +69,9 @@ row, each column, and each of the 3x3 boxes
     <string label="sudoku" name="settings_shortcut">s</string>
     <string label="sudoku" name="settings_title">Sudoku settings</string>
     <string label="MainPage" name="sudoku_btn">Play Sudoku</string>
+    <string label="Universal" name="title_acks">Acknowledgments</string>
     <string label="AboutMe" name="title_activity_about_me">About Me</string>
-    <string label="Dictionary" name="title_activity_dictionary">Dictionary</string>
+    <string label="Dictionary" name="title_activity_dictionary">Test Dictionary</string>
     <string label="MainPage" name="title_activity_main">Matt Bentson</string>
     <string label="AboutMe" name="unique_id">This Phone\'s Unique Identifier:</string>
     <string label="MainPage" name="welcome_txt">Welcome!</string>
