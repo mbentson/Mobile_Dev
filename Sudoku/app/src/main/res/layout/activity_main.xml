@@ -76,10 +76,10 @@
         android:width="150dp"
         android:textSize="20dp"
         android:textAllCaps="false"
-        android:layout_below="@+id/dictionaryBtn"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"
-        android:clickable="true" />
+        android:clickable="true"
+        android:layout_below="@+id/wordFadeBtn"
+        android:layout_alignLeft="@+id/wordFadeBtn"
+        android:layout_marginTop="20dp" />
 
     <Button
         android:layout_width="wrap_content"
@@ -96,4 +96,20 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
         android:clickable="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/wordFade_btn"
+        android:id="@+id/wordFadeBtn"
+        android:background="#ffffa8b1"
+        android:textColor="#ff000000"
+        android:height="30dp"
+        android:width="150dp"
+        android:textSize="20dp"
+        android:textAllCaps="false"
+        android:clickable="true"
+        android:layout_below="@+id/dictionaryBtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp" />
 </RelativeLayout>

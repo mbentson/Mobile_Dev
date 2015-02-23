@@ -29,7 +29,6 @@ public class Dictionary extends Activity implements View.OnClickListener {
     List<String> wordList = new ArrayList<>();
     TextView listOfWords;
     EditText textEdit;
-    int pointer = 0;
     String word;
     String tempWord;
 
@@ -89,7 +88,7 @@ public class Dictionary extends Activity implements View.OnClickListener {
             } else {
                 if(word.length() >= 3)
                 {
-                    for(int i = pointer; i < wordList.size(); i++)
+                    for(int i = 0; i < wordList.size(); i++)
                     {
                         tempWord = wordList.get(i);
                         if(tempWord.startsWith(word))

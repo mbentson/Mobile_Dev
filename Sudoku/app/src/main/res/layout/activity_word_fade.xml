@@ -1,0 +1,19 @@
+<HorizontalScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"  
+    android:layout_height="wrap_content"  
+    android:scrollbars="none"
+    android:background="#ffffffff">
+        <LinearLayout   
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"   
+            android:orientation="horizontal"
+            android:background="#ffffffff">
+            <GridView android:id="@+id/grid"
+                android:layout_width="930dp"
+                android:layout_height="fill_parent"
+                android:gravity="center"
+                android:numColumns="31"
+                android:columnWidth="30dp"
+                android:background="#ffecffd6"/>
+        </LinearLayout>
+</HorizontalScrollView>

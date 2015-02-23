@@ -28,6 +28,9 @@ public class MainActivity extends Activity implements View.OnClickListener {
         View dictionaryButton = findViewById(R.id.dictionaryBtn);
         dictionaryButton.setOnClickListener(this);
 
+        View wordFadeButton = findViewById(R.id.wordFadeBtn);
+        wordFadeButton.setOnClickListener(this);
+
         View quitButton = findViewById(R.id.quitBtn);
         quitButton.setOnClickListener(this);
     }
@@ -35,21 +38,27 @@ public class MainActivity extends Activity implements View.OnClickListener {
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.aboutBtn:
-                Intent i = new Intent(this, AboutMe.class);
-                startActivity(i);
+                Intent a = new Intent(this, AboutMe.class);
+                startActivity(a);
                 break;
             case R.id.sudokuBtn:
-                Intent j = new Intent(this, Sudoku.class);
-                startActivity(j);
+                Intent s = new Intent(this, Sudoku.class);
+                startActivity(s);
                 break;
             case R.id.errorBtn:
-                Intent k = new Intent();
-                startActivity(k);
+                Intent e = new Intent();
+                startActivity(e);
                 break;
             case R.id.dictionaryBtn:
-                Intent l = new Intent(this, Dictionary.class);
-                startActivity(l);
+                Intent d = new Intent(this, Dictionary.class);
+                startActivity(d);
                 break;
+
+            case R.id.wordFadeBtn:
+                Intent w = new Intent(this, WordFade.class);
+                startActivity(w);
+                break;
+
             case R.id.quitBtn:
                 finish();
                 break;

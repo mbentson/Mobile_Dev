@@ -39,7 +39,7 @@ row, each column, and each of the 3x3 boxes
     <string name="app_name">NUMAD15s-MattBentson</string>
     <string label="Universal" name="back_btn">Back</string>
     <string label="sudoku" name="continue_label">Continue</string>
-    <string label="Dictionary" name="dict_ack_txt">Zhongjie Mao: for insight into how to store/load my dictionary.\n\nStack Overflow: for the code to play the pre-installed Android beep - http://stackoverflow.com/questions/12154940/how-to-make-a-beep-in-android</string>
+    <string label="Dictionary" name="dict_ack_txt">Zhongjie Mao: for insight into how to store/load my dictionary.\n\nStack Overflow: for the code to play the beep - http://stackoverflow.com/questions/12154940/how-to-make-a-beep-in-android</string>
     <string label="Dictionary" name="dictionary_ack_btn">Acknowledgments</string>
     <string label="MainPage" name="dictionary_btn">Dictionary</string>
     <string label="Dictionary" name="dictionary_clear_btn">Clear</string>
@@ -50,6 +50,7 @@ row, each column, and each of the 3x3 boxes
     <string label="sudoku" name="exit_label">Exit</string>
     <string label="sudoku" name="game_title">Game</string>
     <string label="sudoku" name="hard_label">Hard</string>
+    <string name="hello_world">Hello world!</string>
     <string label="sudoku" name="hints_summary">Show hints during play</string>
     <string label="sudoku" name="hints_title">Hints</string>
     <string label="sudoku" name="keypad_title">Keypad</string>
@@ -73,8 +74,10 @@ row, each column, and each of the 3x3 boxes
     <string label="AboutMe" name="title_activity_about_me">About Me</string>
     <string label="Dictionary" name="title_activity_dictionary">Test Dictionary</string>
     <string label="MainPage" name="title_activity_main">Matt Bentson</string>
+    <string name="title_activity_word_fade">WordFade</string>
     <string label="AboutMe" name="unique_id">This Phone\'s Unique Identifier:</string>
     <string label="MainPage" name="welcome_txt">Welcome!</string>
+    <string label="Wordfade" name="wordFade_btn">WordFade</string>
     <string label="AboutMe" name="year_lbl">Year in School:</string>
     <string label="AboutMe" name="year_txt">Junior</string>
 </resources>

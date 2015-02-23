@@ -9,11 +9,11 @@
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="edu.neu.madcourse.mattbentson"
-    android:versionCode="1"
-    android:versionName="1.0" >
+    android:versionCode="2"
+    android:versionName="1.1" >
 
     <uses-sdk
-        android:minSdkVersion="3"
+        android:minSdkVersion="5"
         android:targetSdkVersion="10" />
 
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
@@ -23,7 +23,7 @@
         android:label="@string/app_name" >
         <activity
             android:name="edu.neu.madcourse.mattbentson.Sudoku"
-            android:label="@string/app_name" >
+            android:label="@string/main_title" >
         </activity>
         <activity
             android:name="edu.neu.madcourse.mattbentson.About"
@@ -39,8 +39,9 @@
             android:label="@string/game_title" />
         <activity
             android:name="edu.neu.madcourse.mattbentson.MainActivity"
-            android:label="@string/title_activity_main" >
-            <intent-filter>
+            android:label="@string/title_activity_main"
+            android:screenOrientation="portrait" >
+            <intent-filter android:label="@string/app_name" >
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -48,7 +49,17 @@
         </activity>
         <activity
             android:name="edu.neu.madcourse.mattbentson.AboutMe"
-            android:label="@string/title_activity_about_me" >
+            android:label="@string/title_activity_about_me"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="edu.neu.madcourse.mattbentson.Dictionary"
+            android:label="@string/title_activity_dictionary"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="edu.neu.madcourse.mattbentson.DictionaryAcks"
+            android:label="@string/title_acks" >
         </activity>
     </application>
 

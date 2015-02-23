@@ -14,12 +14,13 @@
         android:id="@+id/aboutBtn"
         android:background="#ffffa8b1"
         android:textColor="#ff000000"
-        android:height="50dp"
-        android:width="250dp"
-        android:layout_alignParentTop="true"
+        android:height="30dp"
+        android:width="150dp"
+        android:textSize="20dp"
+        android:layout_below="@+id/welcomeText"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="159dp"
-        android:textSize="24dp" />
+        android:layout_marginTop="30dp"
+        android:clickable="true" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -28,10 +29,9 @@
         android:text="@string/welcome_txt"
         android:id="@+id/welcomeText"
         android:textColor="#ff000000"
-        android:textSize="50dp"
+        android:textSize="30dp"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="50dp" />
+        android:layout_centerHorizontal="true" />
 
     <Button
         android:layout_width="wrap_content"
@@ -40,13 +40,14 @@
         android:id="@+id/sudokuBtn"
         android:background="#ffffa8b1"
         android:textColor="#ff000000"
-        android:height="50dp"
-        android:width="250dp"
-        android:textSize="24dp"
+        android:height="30dp"
+        android:width="150dp"
+        android:textSize="20dp"
         android:layout_below="@+id/aboutBtn"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
-        android:textAllCaps="false"/>
+        android:textAllCaps="false"
+        android:clickable="true" />
 
     <Button
         android:layout_width="wrap_content"
@@ -55,13 +56,14 @@
         android:id="@+id/errorBtn"
         android:background="#ffffa8b1"
         android:textColor="#ff000000"
-        android:height="50dp"
-        android:width="250dp"
-        android:textSize="24dp"
+        android:height="30dp"
+        android:width="150dp"
+        android:textSize="20dp"
         android:textAllCaps="false"
         android:layout_below="@+id/sudokuBtn"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp" />
+        android:layout_marginTop="20dp"
+        android:clickable="true" />
 
     <Button
         android:layout_width="wrap_content"
@@ -70,12 +72,29 @@
         android:id="@+id/quitBtn"
         android:background="#ffffa8b1"
         android:textColor="#ff000000"
-        android:height="50dp"
-        android:width="250dp"
-        android:textSize="24dp"
+        android:height="30dp"
+        android:width="150dp"
+        android:textSize="20dp"
+        android:textAllCaps="false"
+        android:layout_below="@+id/dictionaryBtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:clickable="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dictionary_btn"
+        android:id="@+id/dictionaryBtn"
+        android:background="#ffffa8b1"
+        android:textColor="#ff000000"
+        android:height="30dp"
+        android:width="150dp"
+        android:textSize="20dp"
         android:textAllCaps="false"
         android:layout_below="@+id/errorBtn"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp" />
+        android:layout_marginTop="20dp"
+        android:clickable="true" />
 </RelativeLayout>
-<!-- From: file:/C:/Users/hocke_000/Documents/Mobile%20Development/Sudoku/app/src/main/res/layout/activity_main.xml -->
+<!-- From: file:/C:/Users/hocke_000/Documents/GitHub/Mobile_Dev/Sudoku/app/src/main/res/layout/activity_main.xml -->

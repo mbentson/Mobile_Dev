@@ -19,4 +19,4 @@
       android:title="@string/hints_title"
       android:summary="@string/hints_summary"
       android:defaultValue="true" />
-</PreferenceScreen><!-- From: file:/C:/Users/hocke_000/Documents/Mobile%20Development/Sudoku/app/src/main/res/xml/settings.xml -->
+</PreferenceScreen><!-- From: file:/C:/Users/hocke_000/Documents/GitHub/Mobile_Dev/Sudoku/app/src/main/res/xml/settings.xml -->

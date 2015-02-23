@@ -9,8 +9,8 @@
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="edu.neu.madcourse.mattbentson"
-    android:versionCode="1"
-    android:versionName="1.0" >
+    android:versionCode="2"
+    android:versionName="1.1" >
 
     <uses-sdk
         android:minSdkVersion="5"
@@ -60,6 +60,10 @@
         <activity
             android:name="edu.neu.madcourse.mattbentson.DictionaryAcks"
             android:label="@string/title_acks" >
+        </activity>
+        <activity
+            android:name="edu.neu.madcourse.mattbentson.WordFade"
+            android:label="@string/title_activity_word_fade" >
         </activity>
     </application>
 

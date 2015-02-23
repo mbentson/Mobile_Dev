@@ -56,10 +56,13 @@ row, each column, and each of the 3x3 boxes
     <string name="major_txt" label="AboutMe">Computer Engineering</string>
     <string name="unique_id" label="AboutMe">This Phone\'s Unique Identifier:</string>
     <string name="back_btn" label="Universal">Back</string>
+    <string name="title_acks" label="Universal">Acknowledgments</string>
     <string name="title_activity_dictionary" label="Dictionary">Test Dictionary</string>
     <string name="dictionary_clear_btn" label="Dictionary">Clear</string>
     <string name="dictionary_ack_btn" label="Dictionary">Acknowledgments</string>
-    <string name="title_acks" label="Universal">Acknowledgments</string>
-    <string name="dict_ack_txt" label="Dictionary">Zhongjie Mao: for insight into how to store/load my dictionary.\n\nStack Overflow: for the code to play the pre-installed Android beep - http://stackoverflow.com/questions/12154940/how-to-make-a-beep-in-android</string>
+    <string name="dict_ack_txt" label="Dictionary">Zhongjie Mao: for insight into how to store/load my dictionary.\n\nStack Overflow: for the code to play the beep - http://stackoverflow.com/questions/12154940/how-to-make-a-beep-in-android</string>
+    <string name="wordFade_btn" label="Wordfade">WordFade</string>
+    <string name="title_activity_word_fade">WordFade</string>
+    <string name="hello_world">Hello world!</string>
 
 </resources>
