@@ -4,7 +4,7 @@ android {
     buildToolsVersion "21.1.2"
     defaultConfig {
         applicationId 'edu.neu.madcourse.mattbentson'
-        minSdkVersion 5
+        minSdkVersion 11
         targetSdkVersion 10
     }
     buildTypes {

@@ -13,7 +13,7 @@
     android:versionName="1.1" >
 
     <uses-sdk
-        android:minSdkVersion="5"
+        android:minSdkVersion="11"
         android:targetSdkVersion="10" />
 
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
@@ -64,6 +64,22 @@
         <activity
             android:name="edu.neu.madcourse.mattbentson.WordFade"
             android:label="@string/title_activity_word_fade" >
+        </activity>
+        <activity
+            android:name="edu.neu.madcourse.mattbentson.wordfade_pause"
+            android:label="@string/title_activity_wordfade_pause" >
+        </activity>
+        <activity
+            android:name="edu.neu.madcourse.mattbentson.WordfadeMenu"
+            android:label="@string/title_activity_wordfade_menu" >
+        </activity>
+        <activity
+            android:name="edu.neu.madcourse.mattbentson.WordfadeAcks"
+            android:label="@string/title_activity_wordfade_acks" >
+        </activity>
+        <activity
+            android:name="edu.neu.madcourse.mattbentson.WordfadeInstructions"
+            android:label="@string/title_activity_wordfade_instructions" >
         </activity>
     </application>
 

@@ -55,7 +55,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
                 break;
 
             case R.id.wordFadeBtn:
-                Intent w = new Intent(this, WordFade.class);
+                Intent w = new Intent(this, WordfadeMenu.class);
                 startActivity(w);
                 break;
 

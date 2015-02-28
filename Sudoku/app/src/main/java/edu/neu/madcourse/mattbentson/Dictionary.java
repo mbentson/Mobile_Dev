@@ -1,6 +1,7 @@
 package edu.neu.madcourse.mattbentson;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
 import android.content.res.AssetManager;
 import android.media.AudioManager;
@@ -11,6 +12,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -31,6 +33,13 @@ public class Dictionary extends Activity implements View.OnClickListener {
     EditText textEdit;
     String word;
     String tempWord;
+    Context context;
+
+    public Dictionary(){}
+    public Dictionary (Context c)
+    {
+        context = c;
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -55,7 +64,8 @@ public class Dictionary extends Activity implements View.OnClickListener {
 
     public void readList(String file) {
         try {
-            AssetManager assetManager = getAssets();
+            wordList.clear();
+            AssetManager assetManager = context.getAssets();
             InputStream is = assetManager.open(file + ".txt");
             BufferedReader reader = new BufferedReader(new InputStreamReader(is));
             String word;
@@ -149,5 +159,16 @@ public class Dictionary extends Activity implements View.OnClickListener {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    public boolean checkWord(String word)
+    {
+        word = word.toLowerCase();
+        readList(word.substring(0,2));
+        if(wordList.indexOf(word) > -1) {
+            return true;
+        }else{
+            return false;
+        }
     }
 }

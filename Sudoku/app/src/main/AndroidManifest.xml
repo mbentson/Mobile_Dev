@@ -9,8 +9,8 @@
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="edu.neu.madcourse.mattbentson.sudoku"
-    android:versionCode="2"
-    android:versionName="1.1" >
+    android:versionCode="3"
+    android:versionName="2.0" >
 
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
 
@@ -60,6 +60,22 @@
         <activity
             android:name="edu.neu.madcourse.mattbentson.WordFade"
             android:label="@string/title_activity_word_fade" >
+        </activity>
+        <activity
+            android:name="edu.neu.madcourse.mattbentson.wordfade_pause"
+            android:label="@string/title_activity_wordfade_pause" >
+        </activity>
+        <activity
+            android:name="edu.neu.madcourse.mattbentson.WordfadeMenu"
+            android:label="@string/title_activity_wordfade_menu" >
+        </activity>
+        <activity
+            android:name="edu.neu.madcourse.mattbentson.WordfadeAcks"
+            android:label="@string/title_activity_wordfade_acks" >
+        </activity>
+        <activity
+            android:name="edu.neu.madcourse.mattbentson.WordfadeInstructions"
+            android:label="@string/title_activity_wordfade_instructions" >
         </activity>
     </application>
 

@@ -73,8 +73,28 @@ row, each column, and each of the 3x3 boxes
     <string label="AboutMe" name="title_activity_about_me">About Me</string>
     <string label="Dictionary" name="title_activity_dictionary">Test Dictionary</string>
     <string label="MainPage" name="title_activity_main">Matt Bentson</string>
+    <string label="Wordfade" name="title_activity_word_fade">WordFade</string>
+    <string name="title_activity_wordfade_acks">Acknowledgments</string>
+    <string name="title_activity_wordfade_instructions">Instructions</string>
+    <string name="title_activity_wordfade_menu">Wordfade</string>
+    <string name="title_activity_wordfade_pause">Paused</string>
     <string label="AboutMe" name="unique_id">This Phone\'s Unique Identifier:</string>
     <string label="MainPage" name="welcome_txt">Welcome!</string>
+    <string label="Wordfade" name="wordFade_btn">WordFade</string>
+    <string name="wordfade_acks_txt">http://www.barebonescoder.com/2010/06/android-development-simple-2d-graphics-part-1/:  For getting me started on my WordfadeGrid.java and LogicalBoard.java classes\n\nThis Sudoku App:  For helping with my WordfadeKeypad.java and numerous other areas where my game used similar features</string>
+    <string name="wordfade_dump_btn">Dump</string>
+    <string name="wordfade_instruct_btn">Instructions</string>
+    <string name="wordfade_instruct_txt">- 60 second per move, -5 points if not\n\n- All words must be more than 3 letters\n\n- Split with under 21 letters to draw a letter\n\n- Dump with under 18 to give one and get three\n\n- Words fade after 10 turns of non-use\n\n- Game ends with negative points, or a word fading</string>
+    <string label="Wordade" name="wordfade_keypad_title">Tile Rack</string>
+    <string name="wordfade_music_btn">Music On/Off</string>
+    <string name="wordfade_pause_btn">Pause</string>
+    <string name="wordfade_play_btn">Play Wordfade</string>
+    <string name="wordfade_quit_btn">Quit</string>
+    <string name="wordfade_resume_btn">Resume</string>
+    <string name="wordfade_score_label">Score: </string>
+    <string name="wordfade_score_value">0</string>
+    <string name="wordfade_split_btn">Split</string>
+    <string name="wordfade_submit_btn">Submit</string>
     <string label="AboutMe" name="year_lbl">Year in School:</string>
     <string label="AboutMe" name="year_txt">Junior</string>
 </resources>
