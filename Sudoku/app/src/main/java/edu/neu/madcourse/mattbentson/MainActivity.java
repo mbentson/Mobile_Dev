@@ -31,6 +31,9 @@ public class MainActivity extends Activity implements View.OnClickListener {
         View wordFadeButton = findViewById(R.id.wordFadeBtn);
         wordFadeButton.setOnClickListener(this);
 
+        View communicationButton = findViewById(R.id.communicationBtn);
+        communicationButton.setOnClickListener(this);
+
         View quitButton = findViewById(R.id.quitBtn);
         quitButton.setOnClickListener(this);
     }
@@ -57,6 +60,11 @@ public class MainActivity extends Activity implements View.OnClickListener {
             case R.id.wordFadeBtn:
                 Intent w = new Intent(this, WordfadeMenu.class);
                 startActivity(w);
+                break;
+
+            case R.id.communicationBtn:
+                Intent c = new Intent(this, Communication.class);
+                startActivity(c);
                 break;
 
             case R.id.quitBtn:

@@ -14,7 +14,17 @@
 
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <permission android:name="edu.neu.madcourse.mattbentson.permission.C2D_MESSAGE" android:protectionLevel="signature" />
+    <uses-permission android:name="edu.neu.madcourse.mattbentson.permission.C2D_MESSAGE" />
+
     <application
+        android:name="edu.neu.madcourse.mattbentson.App"
         android:icon="@drawable/applogo"
         android:label="@string/app_name" >
         <activity
@@ -62,10 +72,6 @@
             android:label="@string/title_activity_word_fade" >
         </activity>
         <activity
-            android:name="edu.neu.madcourse.mattbentson.wordfade_pause"
-            android:label="@string/title_activity_wordfade_pause" >
-        </activity>
-        <activity
             android:name="edu.neu.madcourse.mattbentson.WordfadeMenu"
             android:label="@string/title_activity_wordfade_menu" >
         </activity>
@@ -77,6 +83,24 @@
             android:name="edu.neu.madcourse.mattbentson.WordfadeInstructions"
             android:label="@string/title_activity_wordfade_instructions" >
         </activity>
+        <activity
+            android:name="edu.neu.madcourse.mattbentson.Communication"
+            android:label="@string/title_activity_communication" >
+        </activity>
+
+        <receiver
+            android:name="edu.neu.madcourse.mattbentson.GcmBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <category android:name="edu.neu.madcourse.mattbentson" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name="edu.neu.madcourse.mattbentson.GcmIntentService" />
+
     </application>
 
 </manifest>

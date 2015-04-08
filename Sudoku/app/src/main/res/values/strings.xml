@@ -81,5 +81,14 @@ row, each column, and each of the 3x3 boxes
     <string name="title_activity_wordfade_instructions">Instructions</string>
     <string name="wordfade_instruct_btn">Instructions</string>
     <string name="wordfade_instruct_txt">- 60 second per move, -5 points if not\n\n- All words must be more than 3 letters\n\n- Split with under 21 letters to draw a letter\n\n- Dump with under 18 to give one and get three\n\n- Words fade after 10 turns of non-use\n\n- Game ends with negative points, or a word fading</string>
+    <string name="communication_btn">Communication</string>
+    <string name="title_activity_communication">Communication</string>
+    <string name="communication_sendScore_btn">Send Score</string>
+    <string name="communication_getScores_btn">Get Scores</string>
+    <string name="communication_register_btn">Register</string>
+    <string name="communication_unregister_btn">Unregister</string>
+    <string name="communication_sendMessage_btn">Send Message</string>
+    <string name="communication_clearMessage_btn">Clear Message</string>
+
 
 </resources>

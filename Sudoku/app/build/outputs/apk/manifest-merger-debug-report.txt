@@ -17,59 +17,79 @@ uses-permission#android.permission.READ_PHONE_STATE
 ADDED from AndroidManifest.xml:15:5
 	android:name
 		ADDED from AndroidManifest.xml:15:22
-application
+uses-permission#android.permission.INTERNET
 ADDED from AndroidManifest.xml:17:5
+	android:name
+		ADDED from AndroidManifest.xml:17:22
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from AndroidManifest.xml:18:5
+	android:name
+		ADDED from AndroidManifest.xml:18:22
+uses-permission#android.permission.VIBRATE
+ADDED from AndroidManifest.xml:19:5
+	android:name
+		ADDED from AndroidManifest.xml:19:22
+uses-permission#android.permission.WAKE_LOCK
+ADDED from AndroidManifest.xml:20:5
+	android:name
+		ADDED from AndroidManifest.xml:20:22
+uses-permission#android.permission.GET_ACCOUNTS
+ADDED from AndroidManifest.xml:21:5
+	android:name
+		ADDED from AndroidManifest.xml:21:22
+uses-permission#com.google.android.c2dm.permission.RECEIVE
+ADDED from AndroidManifest.xml:22:5
+	android:name
+		ADDED from AndroidManifest.xml:22:22
+permission#edu.neu.madcourse.mattbentson.permission.C2D_MESSAGE
+ADDED from AndroidManifest.xml:23:5
+	android:protectionLevel
+		ADDED from AndroidManifest.xml:23:85
+	android:name
+		ADDED from AndroidManifest.xml:23:17
+uses-permission#edu.neu.madcourse.mattbentson.permission.C2D_MESSAGE
+ADDED from AndroidManifest.xml:24:5
+	android:name
+		ADDED from AndroidManifest.xml:24:22
+application
+ADDED from AndroidManifest.xml:26:5
+MERGED from com.android.support:appcompat-v7:21.0.3:16:5
+MERGED from com.android.support:support-v4:21.0.3:16:5
+MERGED from com.google.android.gms:play-services:6.5.87:20:5
+MERGED from com.android.support:support-v4:21.0.3:16:5
 	android:label
-		ADDED from AndroidManifest.xml:19:9
+		ADDED from AndroidManifest.xml:29:9
 	android:icon
-		ADDED from AndroidManifest.xml:18:9
+		ADDED from AndroidManifest.xml:28:9
+	android:name
+		ADDED from AndroidManifest.xml:27:9
 activity#edu.neu.madcourse.mattbentson.Sudoku
-ADDED from AndroidManifest.xml:20:9
+ADDED from AndroidManifest.xml:30:9
 	android:label
-		ADDED from AndroidManifest.xml:22:13
+		ADDED from AndroidManifest.xml:32:13
 	android:name
-		ADDED from AndroidManifest.xml:21:13
-activity#edu.neu.madcourse.mattbentson.About
-ADDED from AndroidManifest.xml:24:9
-	android:label
-		ADDED from AndroidManifest.xml:26:13
-	android:theme
-		ADDED from AndroidManifest.xml:27:13
-	android:name
-		ADDED from AndroidManifest.xml:25:13
-activity#edu.neu.madcourse.mattbentson.Prefs
-ADDED from AndroidManifest.xml:29:9
-	android:label
 		ADDED from AndroidManifest.xml:31:13
-	android:name
-		ADDED from AndroidManifest.xml:30:13
-activity#edu.neu.madcourse.mattbentson.Game
-ADDED from AndroidManifest.xml:33:9
+activity#edu.neu.madcourse.mattbentson.About
+ADDED from AndroidManifest.xml:34:9
 	android:label
-		ADDED from AndroidManifest.xml:35:13
-	android:name
-		ADDED from AndroidManifest.xml:34:13
-activity#edu.neu.madcourse.mattbentson.MainActivity
-ADDED from AndroidManifest.xml:36:9
-	android:screenOrientation
-		ADDED from AndroidManifest.xml:39:13
-	android:label
-		ADDED from AndroidManifest.xml:38:13
-	android:name
+		ADDED from AndroidManifest.xml:36:13
+	android:theme
 		ADDED from AndroidManifest.xml:37:13
-intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from AndroidManifest.xml:40:13
+	android:name
+		ADDED from AndroidManifest.xml:35:13
+activity#edu.neu.madcourse.mattbentson.Prefs
+ADDED from AndroidManifest.xml:39:9
 	android:label
-		ADDED from AndroidManifest.xml:40:28
-action#android.intent.action.MAIN
-ADDED from AndroidManifest.xml:41:17
+		ADDED from AndroidManifest.xml:41:13
 	android:name
-		ADDED from AndroidManifest.xml:41:25
-category#android.intent.category.LAUNCHER
-ADDED from AndroidManifest.xml:43:17
+		ADDED from AndroidManifest.xml:40:13
+activity#edu.neu.madcourse.mattbentson.Game
+ADDED from AndroidManifest.xml:43:9
+	android:label
+		ADDED from AndroidManifest.xml:45:13
 	android:name
-		ADDED from AndroidManifest.xml:43:27
-activity#edu.neu.madcourse.mattbentson.AboutMe
+		ADDED from AndroidManifest.xml:44:13
+activity#edu.neu.madcourse.mattbentson.MainActivity
 ADDED from AndroidManifest.xml:46:9
 	android:screenOrientation
 		ADDED from AndroidManifest.xml:49:13
@@ -77,55 +97,109 @@ ADDED from AndroidManifest.xml:46:9
 		ADDED from AndroidManifest.xml:48:13
 	android:name
 		ADDED from AndroidManifest.xml:47:13
-activity#edu.neu.madcourse.mattbentson.Dictionary
-ADDED from AndroidManifest.xml:51:9
-	android:screenOrientation
-		ADDED from AndroidManifest.xml:54:13
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from AndroidManifest.xml:50:13
 	android:label
-		ADDED from AndroidManifest.xml:53:13
+		ADDED from AndroidManifest.xml:50:28
+action#android.intent.action.MAIN
+ADDED from AndroidManifest.xml:51:17
 	android:name
-		ADDED from AndroidManifest.xml:52:13
-activity#edu.neu.madcourse.mattbentson.DictionaryAcks
+		ADDED from AndroidManifest.xml:51:25
+category#android.intent.category.LAUNCHER
+ADDED from AndroidManifest.xml:53:17
+	android:name
+		ADDED from AndroidManifest.xml:53:27
+activity#edu.neu.madcourse.mattbentson.AboutMe
 ADDED from AndroidManifest.xml:56:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:59:13
 	android:label
 		ADDED from AndroidManifest.xml:58:13
 	android:name
 		ADDED from AndroidManifest.xml:57:13
-activity#edu.neu.madcourse.mattbentson.WordFade
-ADDED from AndroidManifest.xml:60:9
+activity#edu.neu.madcourse.mattbentson.Dictionary
+ADDED from AndroidManifest.xml:61:9
+	android:screenOrientation
+		ADDED from AndroidManifest.xml:64:13
 	android:label
+		ADDED from AndroidManifest.xml:63:13
+	android:name
 		ADDED from AndroidManifest.xml:62:13
-	android:name
-		ADDED from AndroidManifest.xml:61:13
-activity#edu.neu.madcourse.mattbentson.wordfade_pause
-ADDED from AndroidManifest.xml:64:9
+activity#edu.neu.madcourse.mattbentson.DictionaryAcks
+ADDED from AndroidManifest.xml:66:9
 	android:label
-		ADDED from AndroidManifest.xml:66:13
+		ADDED from AndroidManifest.xml:68:13
 	android:name
-		ADDED from AndroidManifest.xml:65:13
+		ADDED from AndroidManifest.xml:67:13
+activity#edu.neu.madcourse.mattbentson.WordFade
+ADDED from AndroidManifest.xml:70:9
+	android:label
+		ADDED from AndroidManifest.xml:72:13
+	android:name
+		ADDED from AndroidManifest.xml:71:13
 activity#edu.neu.madcourse.mattbentson.WordfadeMenu
-ADDED from AndroidManifest.xml:68:9
+ADDED from AndroidManifest.xml:74:9
 	android:label
-		ADDED from AndroidManifest.xml:70:13
+		ADDED from AndroidManifest.xml:76:13
 	android:name
-		ADDED from AndroidManifest.xml:69:13
+		ADDED from AndroidManifest.xml:75:13
 activity#edu.neu.madcourse.mattbentson.WordfadeAcks
-ADDED from AndroidManifest.xml:72:9
+ADDED from AndroidManifest.xml:78:9
 	android:label
-		ADDED from AndroidManifest.xml:74:13
+		ADDED from AndroidManifest.xml:80:13
 	android:name
-		ADDED from AndroidManifest.xml:73:13
+		ADDED from AndroidManifest.xml:79:13
 activity#edu.neu.madcourse.mattbentson.WordfadeInstructions
-ADDED from AndroidManifest.xml:76:9
+ADDED from AndroidManifest.xml:82:9
 	android:label
-		ADDED from AndroidManifest.xml:78:13
+		ADDED from AndroidManifest.xml:84:13
 	android:name
-		ADDED from AndroidManifest.xml:77:13
+		ADDED from AndroidManifest.xml:83:13
+activity#edu.neu.madcourse.mattbentson.Communication
+ADDED from AndroidManifest.xml:86:9
+	android:label
+		ADDED from AndroidManifest.xml:88:13
+	android:name
+		ADDED from AndroidManifest.xml:87:13
+receiver#edu.neu.madcourse.mattbentson.GcmBroadcastReceiver
+ADDED from AndroidManifest.xml:91:9
+	android:permission
+		ADDED from AndroidManifest.xml:93:13
+	android:name
+		ADDED from AndroidManifest.xml:92:13
+intent-filter#com.google.android.c2dm.intent.RECEIVE+com.google.android.c2dm.intent.REGISTRATION+edu.neu.madcourse.mattbentson
+ADDED from AndroidManifest.xml:94:13
+action#com.google.android.c2dm.intent.RECEIVE
+ADDED from AndroidManifest.xml:95:17
+	android:name
+		ADDED from AndroidManifest.xml:95:25
+action#com.google.android.c2dm.intent.REGISTRATION
+ADDED from AndroidManifest.xml:96:17
+	android:name
+		ADDED from AndroidManifest.xml:96:25
+category#edu.neu.madcourse.mattbentson
+ADDED from AndroidManifest.xml:98:17
+	android:name
+		ADDED from AndroidManifest.xml:98:27
+service#edu.neu.madcourse.mattbentson.GcmIntentService
+ADDED from AndroidManifest.xml:102:9
+	android:name
+		ADDED from AndroidManifest.xml:102:18
 uses-sdk
 INJECTED from AndroidManifest.xml:0:0 reason: use-sdk injection requested
+MERGED from com.android.support:appcompat-v7:21.0.3:15:5
+MERGED from com.android.support:support-v4:21.0.3:15:5
+MERGED from com.google.android.gms:play-services:6.5.87:18:5
+MERGED from com.android.support:support-v4:21.0.3:15:5
 	android:targetSdkVersion
 		INJECTED from AndroidManifest.xml:0:0
 		INJECTED from AndroidManifest.xml:0:0
 	android:minSdkVersion
 		INJECTED from AndroidManifest.xml:0:0
 		INJECTED from AndroidManifest.xml:0:0
+meta-data#com.google.android.gms.version
+ADDED from com.google.android.gms:play-services:6.5.87:21:9
+	android:value
+		ADDED from com.google.android.gms:play-services:6.5.87:23:13
+	android:name
+		ADDED from com.google.android.gms:play-services:6.5.87:22:13

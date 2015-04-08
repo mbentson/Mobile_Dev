@@ -1,0 +1,103 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="edu.neu.madcourse.mattbentson.Communication"
+    android:background="#ffecffd6">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/communicationObjectValue"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@+id/communicationSendScoreButton" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/communication_sendScore_btn"
+        android:id="@+id/communicationSendScoreButton"
+        android:width="100dp"
+        android:height="40dp"
+        android:layout_alignTop="@+id/communicationObjectValue"
+        android:layout_alignParentRight="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/communication_getScores_btn"
+        android:id="@+id/communicationGetScoresButton"
+        android:width="100dp"
+        android:height="40dp"
+        android:layout_below="@+id/communicationObjectValue"
+        android:layout_alignParentRight="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/communicationObjectList"
+        android:textColor="#ff000000"
+        android:text="High scores:"
+        android:layout_below="@+id/communicationSendScoreButton"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="10dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/communication_register_btn"
+        android:id="@+id/communicationRegisterBtn"
+        android:width="100dp"
+        android:height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/communication_unregister_btn"
+        android:id="@+id/communicationUnregisterBtn"
+        android:width="100dp"
+        android:height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/communicationMessageText"
+        android:layout_below="@+id/communicationRegisterBtn"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/communicationUnregisterBtn"
+        android:layout_marginTop="5dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/communication_sendMessage_btn"
+        android:id="@+id/communicationSendMessageBtn"
+        android:width="100dp"
+        android:height="40dp"
+        android:layout_below="@+id/communicationMessageText"
+        android:layout_alignParentLeft="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/communication_clearMessage_btn"
+        android:id="@+id/communicationClearMessageBtn"
+        android:width="100dp"
+        android:height="40dp"
+        android:layout_below="@+id/communicationMessageText"
+        android:layout_alignParentRight="true" />
+
+    <TextView
+        android:id="@+id/communicationDisplayText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true" />
+</RelativeLayout>
