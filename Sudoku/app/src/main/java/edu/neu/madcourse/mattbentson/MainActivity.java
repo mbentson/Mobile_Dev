@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Toast;
 
 import edu.neu.madcourse.mattbentson.sudoku.R;
 
@@ -33,6 +34,12 @@ public class MainActivity extends Activity implements View.OnClickListener {
 
         View communicationButton = findViewById(R.id.communicationBtn);
         communicationButton.setOnClickListener(this);
+
+        View wordfade2Button = findViewById(R.id.wordfadeMultiBtn);
+        wordfade2Button.setOnClickListener(this);
+
+        View finalProjectButton = findViewById(R.id.finalProjectBtn);
+        finalProjectButton.setOnClickListener(this);
 
         View quitButton = findViewById(R.id.quitBtn);
         quitButton.setOnClickListener(this);
@@ -65,6 +72,16 @@ public class MainActivity extends Activity implements View.OnClickListener {
             case R.id.communicationBtn:
                 Intent c = new Intent(this, Communication.class);
                 startActivity(c);
+                break;
+
+            case R.id.wordfadeMultiBtn:
+                Intent w2 = new Intent(this, WordfadeMulti.class);
+                startActivity(w2);
+                break;
+
+            case R.id.finalProjectBtn:
+                Intent f = new Intent("HaddadniaBentson.intent.action.Launch");
+                startActivity(f);
                 break;
 
             case R.id.quitBtn:

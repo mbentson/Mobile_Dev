@@ -89,6 +89,12 @@ row, each column, and each of the 3x3 boxes
     <string name="communication_unregister_btn">Unregister</string>
     <string name="communication_sendMessage_btn">Send Message</string>
     <string name="communication_clearMessage_btn">Clear Message</string>
+    <string name="communication_getIds_btn">Get IDs</string>
+    <string name="trickiest_part_btn">Trickiest Part</string>
+    <string name="wordfadeMulti_btn">2 player Wordfade</string>
+    <string name="title_activity_wordfade_multi">WordfadeMulti</string>
+
+    <string name="hello_world">Hello world!</string>
 
 
 </resources>

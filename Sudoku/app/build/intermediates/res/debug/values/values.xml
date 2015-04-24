@@ -279,6 +279,7 @@ row, each column, and each of the 3x3 boxes
     <eat-comment/>
     <string name="communication_btn">Communication</string>
     <string name="communication_clearMessage_btn">Clear Message</string>
+    <string name="communication_getIds_btn">Get IDs</string>
     <string name="communication_getScores_btn">Get Scores</string>
     <string name="communication_register_btn">Register</string>
     <string name="communication_sendMessage_btn">Send Message</string>
@@ -303,6 +304,7 @@ row, each column, and each of the 3x3 boxes
     <string label="sudoku" name="exit_label">Exit</string>
     <string label="sudoku" name="game_title">Game</string>
     <string label="sudoku" name="hard_label">Hard</string>
+    <string name="hello_world">Hello world!</string>
     <string label="sudoku" name="hints_summary">Show hints during play</string>
     <string label="sudoku" name="hints_title">Hints</string>
     <string label="sudoku" name="keypad_title">Keypad</string>
@@ -337,7 +339,9 @@ row, each column, and each of the 3x3 boxes
     <string name="title_activity_wordfade_acks">Acknowledgments</string>
     <string name="title_activity_wordfade_instructions">Instructions</string>
     <string name="title_activity_wordfade_menu">Wordfade</string>
+    <string name="title_activity_wordfade_multi">WordfadeMulti</string>
     <string name="title_activity_wordfade_pause">Paused</string>
+    <string name="trickiest_part_btn">Trickiest Part</string>
     <string label="AboutMe" name="unique_id">This Phone\'s Unique Identifier:</string>
     <!-- From: file:/C:/Users/hocke_000/Documents/GitHub/Mobile%20Dev/Mobile_Dev/Sudoku/app/build/intermediates/exploded-aar/com.google.android.gms/play-services/6.5.87/res/values/wallet_strings.xml -->
     <eat-comment/>
@@ -346,6 +350,7 @@ row, each column, and each of the 3x3 boxes
     <eat-comment/>
     <string label="MainPage" name="welcome_txt">Welcome!</string>
     <string label="Wordfade" name="wordFade_btn">WordFade</string>
+    <string name="wordfadeMulti_btn">2 player Wordfade</string>
     <string name="wordfade_acks_txt">http://www.barebonescoder.com/2010/06/android-development-simple-2d-graphics-part-1/:  For getting me started on my WordfadeGrid.java and LogicalBoard.java classes\n\nThis Sudoku App:  For helping with my WordfadeKeypad.java and numerous other areas where my game used similar features</string>
     <string name="wordfade_dump_btn">Dump</string>
     <string name="wordfade_instruct_btn">Instructions</string>

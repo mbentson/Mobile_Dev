@@ -7,44 +7,6 @@
     tools:context="edu.neu.madcourse.mattbentson.Communication"
     android:background="#ffecffd6">
 
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/communicationObjectValue"
-        android:layout_centerVertical="true"
-        android:layout_alignParentLeft="true"
-        android:layout_toLeftOf="@+id/communicationSendScoreButton" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/communication_sendScore_btn"
-        android:id="@+id/communicationSendScoreButton"
-        android:width="100dp"
-        android:height="40dp"
-        android:layout_alignTop="@+id/communicationObjectValue"
-        android:layout_alignParentRight="true" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/communication_getScores_btn"
-        android:id="@+id/communicationGetScoresButton"
-        android:width="100dp"
-        android:height="40dp"
-        android:layout_below="@+id/communicationObjectValue"
-        android:layout_alignParentRight="true" />
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/communicationObjectList"
-        android:textColor="#ff000000"
-        android:text="High scores:"
-        android:layout_below="@+id/communicationSendScoreButton"
-        android:layout_alignParentLeft="true"
-        android:layout_marginTop="10dp" />
-
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -82,7 +44,8 @@
         android:width="100dp"
         android:height="40dp"
         android:layout_below="@+id/communicationMessageText"
-        android:layout_alignParentLeft="true" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/communicationRegisterBtn" />
 
     <Button
         android:layout_width="wrap_content"
@@ -100,4 +63,23 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/communication_getIds_btn"
+        android:id="@+id/communicationGetIdsBtn"
+        android:width="100dp"
+        android:height="40dp"
+        android:layout_below="@+id/communicationSendMessageBtn"
+        android:layout_centerHorizontal="true" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/communicationListView"
+        android:layout_below="@+id/communicationGetIdsBtn"
+        android:layout_centerHorizontal="true"
+        android:background="#ff000000" />
+
 </RelativeLayout>

@@ -13,8 +13,11 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -38,9 +41,6 @@ import edu.neu.madcourse.mattbentson.sudoku.R;
 
 public class Communication extends Activity implements View.OnClickListener{
 
-    private EditText valueText;
-    private TextView scoreList;
-
     public static final String EXTRA_MESSAGE = "message";
     public static final String PROPERTY_REG_ID = "registration_id";
     private static final String PROPERTY_APP_VERSION = "appVersion";
@@ -48,7 +48,8 @@ public class Communication extends Activity implements View.OnClickListener{
     public static final String PROPERTY_TITLE_TEXT = "titleText";
     public static final String PROPERTY_CONTENT_TEXT = "contentText";
     public static final String PROPERTY_NTYPE = "nType";
-    List<String> regIds = new ArrayList<String>();
+    List<String> regIds = new ArrayList<>();
+    final ArrayList<String> listOfIds = new ArrayList<>();
 
     private final static int PLAY_SERVICES_RESOLUTION_REQUEST = 9000;
     static final String TAG = "GCM Sample Demo";
@@ -65,15 +66,6 @@ public class Communication extends Activity implements View.OnClickListener{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_communication);
 
-        valueText = (EditText) findViewById(R.id.communicationObjectValue);
-        scoreList = (TextView) findViewById(R.id.communicationObjectList);
-
-        Button sendScoreButton = (Button) findViewById(R.id.communicationSendScoreButton);
-        sendScoreButton.setOnClickListener(this);
-
-        Button getScoresButton = (Button) findViewById(R.id.communicationGetScoresButton);
-        getScoresButton.setOnClickListener(this);
-
         Button registerButton = (Button) findViewById(R.id.communicationRegisterBtn);
         registerButton.setOnClickListener(this);
 
@@ -86,26 +78,23 @@ public class Communication extends Activity implements View.OnClickListener{
         Button clearMessageButton = (Button) findViewById(R.id.communicationClearMessageBtn);
         clearMessageButton.setOnClickListener(this);
 
+        Button getIDsButton = (Button) findViewById(R.id.communicationGetIdsBtn);
+        getIDsButton.setOnClickListener(this);
+
         mDisplay = (TextView) findViewById(R.id.communicationDisplayText);
         mMessage = (EditText) findViewById(R.id.communicationMessageText);
         gcm = GoogleCloudMessaging.getInstance(this);
         context = getApplicationContext();
+        getIDsFromParse();
     }
 
     public void onClick(View v) {
         switch (v.getId()) {
-            case R.id.communicationSendScoreButton:
-                sendData();
-                break;
-            case R.id.communicationGetScoresButton:
-                getData();
-                break;
             case R.id.communicationSendMessageBtn:
                 String message = ((EditText) findViewById(R.id.communicationMessageText))
                         .getText().toString();
                 if (message != "") {
-                    regIds.clear();
-                    getIdsToSend(message);
+                    sendMessage(message);
                 } else {
                     Toast.makeText(context, "Sending Context Empty!",
                             Toast.LENGTH_LONG).show();
@@ -126,33 +115,10 @@ public class Communication extends Activity implements View.OnClickListener{
                     }
                 }
                 break;
+            case R.id.communicationGetIdsBtn:
+                getIDsFromParse();
+                break;
         }
-    }
-
-    private void sendData()
-    {
-        if(!valueText.getText().toString().equals("")) {
-            ParseObject object = new ParseObject("HighScore");
-            object.put("score", valueText.getText().toString());
-            object.saveInBackground();
-            valueText.setText("");
-        }
-    }
-
-    private void getData()
-    {
-        scoreList.setText("High scores:");
-        ParseQuery<ParseObject> query = ParseQuery.getQuery("HighScore");
-        query.findInBackground(new FindCallback<ParseObject>() {
-            @Override
-            public void done(List<ParseObject> parseObjects, ParseException e) {
-                if (e == null) {
-                    for(ParseObject parseObject : parseObjects) {
-                        scoreList.setText(scoreList.getText() + "\n" + parseObject.getString("score"));
-                    }
-                }
-            }
-        });
     }
 
     private void deleteInParse()
@@ -173,22 +139,44 @@ public class Communication extends Activity implements View.OnClickListener{
         });
     }
 
-    private void getIdsToSend(final String message)
+    private void getIDsFromParse()
     {
         ParseQuery<ParseObject> query = ParseQuery.getQuery("RegistrationID");
         query.findInBackground(new FindCallback<ParseObject>() {
             @Override
             public void done(List<ParseObject> parseObjects, ParseException e) {
-                if (e == null) {
-                    for(ParseObject parseObject : parseObjects) {
-                        regIds.add(parseObject.getString("identifier"));
+                if (e == null){
+                    listOfIds.clear();
+                    for (ParseObject parseObject : parseObjects) {
+                        listOfIds.add(parseObject.getString("identifier"));
                     }
-
-                    sendMessage(message);
                 }
             }
         });
+        setListView();
     }
+
+    private void setListView()
+    {
+        final ListView listview = (ListView)findViewById(R.id.communicationListView);
+
+        ArrayAdapter<String> adapter = new ArrayAdapter<>(this,
+                android.R.layout.simple_expandable_list_item_1,
+                android.R.id.text1,
+                listOfIds);
+        //assign adapter to the list view
+        listview.setAdapter(adapter);
+        listview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                String idToSend = (String)listview.getItemAtPosition(position);
+                regIds.clear();
+                regIds.add(idToSend);
+            }
+
+        });
+    }
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -399,7 +387,7 @@ public class Communication extends Activity implements View.OnClickListener{
 
                 for(int i = 0; i < regIds.size(); i++)
                 {
-                    Log.d("Outputting reg ids",regIds.get(i)+"");
+                    Log.d("Outputting reg ids",regIds.get(i)+"\n");
                 }
 
                 gcmNotification.sendNotification(msgParams, regIds,

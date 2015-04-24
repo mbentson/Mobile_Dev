@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="edu.neu.madcourse.mattbentson.WordfadeMulti"
+    android:background="#ffecffd6">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title_acks"
+        android:id="@+id/wordfadeMultiAcksBtn"
+        android:width="150dp"
+        android:height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/back_btn"
+        android:id="@+id/multiBackBtn"
+        android:width="100dp"
+        android:height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/usernameText"
+        android:layout_below="@+id/usernameLabel"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/multiBackBtn" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Username"
+        android:id="@+id/usernameLabel"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:textColor="#ff000000"
+        android:textSize="16dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Find Game"
+        android:id="@+id/findGameBtn"
+        android:width="100dp"
+        android:height="40dp"
+        android:layout_below="@+id/usernameText"
+        android:layout_centerHorizontal="true" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/multiListView"
+        android:background="#ff000000"
+        android:layout_below="@+id/findGameBtn"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/wordfadeMultiAcksBtn" />
+</RelativeLayout>

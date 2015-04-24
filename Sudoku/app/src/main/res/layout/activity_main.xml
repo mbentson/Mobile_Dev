@@ -132,4 +132,35 @@
         android:clickable="true"
         android:layout_alignTop="@+id/aboutBtn"
         android:layout_alignParentRight="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/trickiest_part_btn"
+        android:id="@+id/finalProjectBtn"
+        android:background="#ffffa8b1"
+        android:textColor="#ff000000"
+        android:height="40dp"
+        android:width="135dp"
+        android:textSize="18dp"
+        android:textAllCaps="false"
+        android:clickable="true"
+        android:layout_below="@+id/wordfadeMultiBtn"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="10px" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/wordfadeMulti_btn"
+        android:id="@+id/wordfadeMultiBtn"
+        android:background="#ffffa8b1"
+        android:textColor="#ff000000"
+        android:height="50dp"
+        android:width="135dp"
+        android:textSize="18dp"
+        android:textAllCaps="false"
+        android:clickable="true"
+        android:layout_alignTop="@+id/sudokuBtn"
+        android:layout_alignParentRight="true" />
 </RelativeLayout>

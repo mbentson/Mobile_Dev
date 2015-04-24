@@ -14,13 +14,14 @@
         android:id="@+id/aboutBtn"
         android:background="#ffffa8b1"
         android:textColor="#ff000000"
-        android:height="30dp"
-        android:width="150dp"
-        android:textSize="20dp"
+        android:height="40dp"
+        android:width="135dp"
+        android:textSize="18dp"
         android:layout_below="@+id/welcomeText"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="30dp"
-        android:clickable="true" />
+        android:layout_marginTop="10dp"
+        android:clickable="true"
+        android:layout_alignParentLeft="true" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -40,14 +41,15 @@
         android:id="@+id/sudokuBtn"
         android:background="#ffffa8b1"
         android:textColor="#ff000000"
-        android:height="30dp"
-        android:width="150dp"
-        android:textSize="20dp"
+        android:height="40dp"
+        android:width="135dp"
+        android:textSize="18dp"
         android:layout_below="@+id/aboutBtn"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:textAllCaps="false"
-        android:clickable="true" />
+        android:clickable="true"
+        android:layout_alignParentLeft="true" />
 
     <Button
         android:layout_width="wrap_content"
@@ -56,14 +58,15 @@
         android:id="@+id/errorBtn"
         android:background="#ffffa8b1"
         android:textColor="#ff000000"
-        android:height="30dp"
-        android:width="150dp"
-        android:textSize="20dp"
+        android:height="40dp"
+        android:width="135dp"
+        android:textSize="18dp"
         android:textAllCaps="false"
         android:layout_below="@+id/sudokuBtn"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"
-        android:clickable="true" />
+        android:layout_marginTop="10dp"
+        android:clickable="true"
+        android:layout_alignParentLeft="true" />
 
     <Button
         android:layout_width="wrap_content"
@@ -72,14 +75,14 @@
         android:id="@+id/quitBtn"
         android:background="#ffffa8b1"
         android:textColor="#ff000000"
-        android:height="30dp"
-        android:width="150dp"
-        android:textSize="20dp"
+        android:height="40dp"
+        android:width="135dp"
+        android:textSize="18dp"
         android:textAllCaps="false"
         android:clickable="true"
-        android:layout_below="@+id/wordFadeBtn"
-        android:layout_alignLeft="@+id/wordFadeBtn"
-        android:layout_marginTop="20dp" />
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp" />
 
     <Button
         android:layout_width="wrap_content"
@@ -88,14 +91,15 @@
         android:id="@+id/dictionaryBtn"
         android:background="#ffffa8b1"
         android:textColor="#ff000000"
-        android:height="30dp"
-        android:width="150dp"
-        android:textSize="20dp"
+        android:height="40dp"
+        android:width="135dp"
+        android:textSize="18dp"
         android:textAllCaps="false"
         android:layout_below="@+id/errorBtn"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"
-        android:clickable="true" />
+        android:layout_marginTop="10dp"
+        android:clickable="true"
+        android:layout_alignParentLeft="true" />
 
     <Button
         android:layout_width="wrap_content"
@@ -104,13 +108,44 @@
         android:id="@+id/wordFadeBtn"
         android:background="#ffffa8b1"
         android:textColor="#ff000000"
-        android:height="30dp"
-        android:width="150dp"
-        android:textSize="20dp"
+        android:height="40dp"
+        android:width="135dp"
+        android:textSize="18dp"
         android:textAllCaps="false"
         android:clickable="true"
         android:layout_below="@+id/dictionaryBtn"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp" />
+        android:layout_marginTop="10dp"
+        android:layout_alignParentLeft="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/communication_btn"
+        android:id="@+id/communicationBtn"
+        android:background="#ffffa8b1"
+        android:textColor="#ff000000"
+        android:height="40dp"
+        android:width="135dp"
+        android:textSize="18dp"
+        android:textAllCaps="false"
+        android:clickable="true"
+        android:layout_alignTop="@+id/aboutBtn"
+        android:layout_alignParentRight="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/trickiest_part_btn"
+        android:id="@+id/finalProjectBtn"
+        android:background="#ffffa8b1"
+        android:textColor="#ff000000"
+        android:height="40dp"
+        android:width="135dp"
+        android:textSize="18dp"
+        android:textAllCaps="false"
+        android:clickable="true"
+        android:layout_alignTop="@+id/sudokuBtn"
+        android:layout_alignLeft="@+id/communicationBtn" />
 </RelativeLayout>
-<!-- From: file:/C:/Users/hocke_000/Documents/GitHub/Mobile_Dev/Sudoku/app/src/main/res/layout/activity_main.xml -->
+<!-- From: file:/C:/Users/hocke_000/Documents/GitHub/Mobile%20Dev/Mobile_Dev/Sudoku/app/src/main/res/layout/activity_main.xml -->

@@ -1,1 +1,8 @@
-C:\Users\hocke_000\Documents\GitHub\Mobile_Dev\Sudoku\app\build\intermediates\classes\release
+C:\Users\hocke_000\Documents\GitHub\Mobile Dev\Mobile_Dev\Sudoku\app\build\intermediates\classes\release
+C:\Users\hocke_000\Documents\GitHub\Mobile Dev\Mobile_Dev\Sudoku\app\build\intermediates\pre-dexed\release\support-annotations-21.0.3-60b77bc4883169e054b8c4303e03dcd7a1726473.jar
+C:\Users\hocke_000\Documents\GitHub\Mobile Dev\Mobile_Dev\Sudoku\app\build\intermediates\pre-dexed\release\bolts-android-1.2.0-515779999aeae3808723eebdc8cfa7e4bf0b8f4f.jar
+C:\Users\hocke_000\Documents\GitHub\Mobile Dev\Mobile_Dev\Sudoku\app\build\intermediates\pre-dexed\release\internal_impl-21.0.3-24061101f4171ccd40cbbbee5416e900aea1eb52.jar
+C:\Users\hocke_000\Documents\GitHub\Mobile Dev\Mobile_Dev\Sudoku\app\build\intermediates\pre-dexed\release\classes-601cd099a750c5125dd96d753023a89db2f8cb7b.jar
+C:\Users\hocke_000\Documents\GitHub\Mobile Dev\Mobile_Dev\Sudoku\app\build\intermediates\pre-dexed\release\Parse-1.9.0-958a3ddfd3a057a7a163b837846e1ac271d2b26f.jar
+C:\Users\hocke_000\Documents\GitHub\Mobile Dev\Mobile_Dev\Sudoku\app\build\intermediates\pre-dexed\release\classes-466f2be0a5ba2400d5b48a0f0434455d5d15860f.jar
+C:\Users\hocke_000\Documents\GitHub\Mobile Dev\Mobile_Dev\Sudoku\app\build\intermediates\pre-dexed\release\classes-311b6e0e4063d4dd1f4381d0ed997b9a6e33401b.jar

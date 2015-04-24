@@ -2,6 +2,7 @@ package edu.neu.madcourse.mattbentson;
 
 import android.app.Activity;
 import android.app.Dialog;
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.text.Editable;
@@ -338,6 +339,10 @@ public class WordFade extends Activity {
 
     private void callQuit()
     {
+        timer.cancel();
+        Intent data = new Intent();
+        data.putExtra("score",(String)scoreText.getText());
+        setResult(RESULT_OK,data);
         finish();
     }
 
@@ -374,6 +379,10 @@ public class WordFade extends Activity {
     public void gameOver()
     {
         timer.cancel();
+
+        Intent data = new Intent();
+        data.putExtra("score",(String)scoreText.getText());
+        setResult(RESULT_OK,data);
         finish();
     }
 
@@ -388,8 +397,7 @@ public class WordFade extends Activity {
 
             public void onFinish() {
                 scoreText.setText((Integer.parseInt((String) scoreText.getText()) - 5) + "");
-                checkScore();
-                restartTimer();
+                gameOver();
             }
         };
 
